@@ -2,12 +2,12 @@
  Minimal markdown based static site generator
 
  ## About
-> Scacit is a minimal static site generator that uses markdown for content and a custom templating engine for layout. Scacit is designed to be simple, fast, and easy to use. It is built with TypeScript and Node.js.
+Scacit is a minimal static site generator that uses markdown for content and a custom templating engine for layout. Scacit is designed to be simple, fast, and easy to use. It is built with TypeScript and Node.js.
+
 There are lots of markdown supporting static site generators out there, but I wanted to build my own to learn more about the process and to have a tool that I could customize to my liking. Scacit is the result of that effort. Perhaps you too will find its simplicity and flexibility to your liking. The name, Scacit, is static, but with the Ts and C switched.
 
-::: warning
-This project is still in development and not ready for production use. API changes are expected.
-:::
+> [!WARNING]
+> This project is still in development and not ready for production use. API changes are expected.
 
 ## Table of Contents
 - [Features](#features)
@@ -24,20 +24,20 @@ This project is still in development and not ready for production use. API chang
 - [Support](#support)
 
 ## Features
-[x] Broader markdown support
-[x] Customizable templating engine
-[x] Easy component system
-[x] Customizable configuration
-[x] Straightforward
-[x] Fast static sites
-[ ] Image optimization
-[ ] Multiple themes
-[ ] Plugins
-[ ] Commonly used components
-[ ] Expanded CLI capabilities
-[ ] GitHub Actions integration
-[ ] Full documentation
-[ ] Extensive testing to ensure stability
+- [x] Broader markdown support
+- [x] Customizable templating engine
+- [x] Easy component system
+- [x] Customizable configuration
+- [x] Straightforward
+- [x] Fast static sites
+- [ ] Image optimization
+- [ ] Multiple themes
+- [ ] Plugins
+- [ ] Commonly used components
+- [ ] Expanded CLI capabilities
+- [ ] GitHub Actions integration
+- [ ] Full documentation
+- [ ] Extensive testing to ensure stability
 
 ### Markdown Support
 Scacit used [Markdown It](https://markdown-it.github.io/) to convert markdown to html. It supports all the features of markdown-it with highlight.js for code highlighting, HTML tags, linkify, and typographer.
