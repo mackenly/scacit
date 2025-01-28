@@ -28,7 +28,6 @@ export async function build() {
         typographer: true
     }).use(highlightjs, {
         inline: true,
-    // @ts-expect-error
     }).use(emoji)
     .use(footnote_plugin)
     // @ts-expect-error
