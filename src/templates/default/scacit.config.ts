@@ -4,6 +4,7 @@ export default {
         description: 'Built with Scacit',
         year: new Date().getFullYear(),
         robots: 'noindex, nofollow',
+        baseUrl: 'http://localhost:3000',
     },
     build: {
         outDir: 'build',

@@ -41,4 +41,5 @@ export interface BuildOptions {
         bundle: boolean;
         minify: boolean;
     };
+    environment?: 'development' | 'production' | undefined;
 }

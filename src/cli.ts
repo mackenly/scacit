@@ -1,16 +1,8 @@
 #!/usr/bin / env node
-import {
-    Command
-} from 'commander';
-import {
-    init
-} from './commands/init';
-import {
-    build
-} from './commands/build';
-import {
-    dev
-} from './commands/dev';
+import { Command } from 'commander';
+import { init} from './commands/init';
+import { build } from './commands/build';
+import { dev } from './commands/dev';
 
 const program = new Command();
 
@@ -32,6 +24,8 @@ program
 program
     .command('dev')
     .description('Start development server')
-    .action(dev);
+    .action(async () => {
+        await dev();
+    });
 
 program.parse();

@@ -125,18 +125,22 @@ export async function build() {
 
     // Build assets
     if (config.default.build.assets.bundle) {
+        const currentDir = process.cwd();
+
         await esbuild({
-            entryPoints: ['assets/scripts.ts'],
+            entryPoints: [path.join(currentDir, 'assets/scripts.ts')],
             bundle: true,
             minify: config.default.build.assets.minify,
-            outfile: path.join(config.default.build.outDir, 'scripts.js'),
+            outfile: path.join(currentDir, config.default.build.outDir, 'scripts.js'),
+            absWorkingDir: currentDir, // Add this line
         });
 
         await esbuild({
-            entryPoints: ['assets/styles.css'],
+            entryPoints: [path.join(currentDir, 'assets/styles.css')],
             bundle: true,
             minify: config.default.build.assets.minify,
-            outfile: path.join(config.default.build.outDir, 'styles.css'),
+            outfile: path.join(currentDir, config.default.build.outDir, 'styles.css'),
+            absWorkingDir: currentDir, // Add this line
         });
     }
 

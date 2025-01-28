@@ -30,11 +30,17 @@ There are lots of markdown supporting static site generators out there, but I wa
 - [x] Customizable configuration
 - [x] Straightforward
 - [x] Fast static sites
-- [ ] Image optimization
-- [ ] Multiple themes
+- [ ] Image optimization and blurred lazy loading
+- [ ] Multiple themes (dark + docs)
 - [ ] Plugins
 - [ ] Commonly used components
+- [ ] Sitemap generation via content exposed to loop
+- [ ] Author name, bio, social, and image
+- [ ] 404/error page
+- [ ] Different layouts for different pages
+- [ ] Site search
 - [ ] Expanded CLI capabilities
+- [ ] Hot reloads
 - [ ] GitHub Actions integration
 - [ ] Full documentation
 - [ ] Extensive testing to ensure stability
