@@ -1,6 +1,8 @@
 # Scacit
  Minimal markdown based static site generator
 
+ [![Tests](https://github.com/mackenly/scacit/actions/workflows/test.yml/badge.svg)](https://github.com/mackenly/scacit/actions/workflows/test.yml)
+
  ## About
 Scacit is a minimal static site generator that uses markdown for content and a custom templating engine for layout. Scacit is designed to be simple, fast, and easy to use. It is built with TypeScript and Node.js.
 
